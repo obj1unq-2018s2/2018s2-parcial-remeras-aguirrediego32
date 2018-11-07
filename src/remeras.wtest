@@ -1,0 +1,14 @@
+import remeras.*
+import sucursales.*
+import comercio.*
+
+describe "comercio"{
+	var r1 = new RemerasLisas(talle= 42,color="blanco")
+	var r2 = new RemerasLisas(talle=40,color="verde")
+	var r3 = new RemerasBordadas(talle=38,color="blanco",bordado=3)
+	var r4 = new RemerasBordadas(talle=38,color="blanco",bordado=4)
+	
+	test "costo de remera lisa"{
+	assert.equals(100, r1.costo())	
+	}
+}
